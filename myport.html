@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="myport.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fadeIn">Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre" class="slideIn">Sobre</a></li>
+                    <li><a href="#portfolio" class="slideIn">Portfolio</a></li>
+                    <li><a href="#contato" class="slideIn">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2 class="fadeIn">Sobre Mim</h2>
+            <p class="fadeIn">Coloque aqui uma breve descrição sobre você e suas habilidades.</p>
+        </div>
+    </section>
+
+    <section id="interesses">
+        <div class="container">
+            <h2 class="fadeIn">Meus Interesses</h2>
+            <div class="interests">
+                <div class="interest musica" onclick="toggleContent('musica')">
+                    Músicas
+                </div>
+                <div id="musica-content" class="content">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6LC3gtxkKq12h3qck1O1W0?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="interest filmes" onclick="toggleContent('filmes')">
+                    Filmes
+                </div>
+                <div id="filmes-content" class="content">
+                    <p>Aqui você pode falar sobre seus filmes favoritos.</p>
+                </div>
+                <div class="interest livros" onclick="toggleContent('livros')">
+                    Livros
+                    <div class="mini-square"></div> <!-- Adicionando a div do mini quadrado -->
+                </div>
+                <div id="livros-content" class="content">
+                    <p>Aqui você pode falar sobre seus livros favoritos.</p>
+                </div>
+                <div class="interest mangas" onclick="toggleContent('mangas')">
+                    Mangás
+                    <div class="mini-square"></div> <!-- Adicionando a div do mini quadrado -->
+                </div>
+                <div id="mangas-content" class="content">
+                    <p>Aqui você pode falar sobre seus mangás favoritos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2 class="fadeIn">Contato</h2>
+            <p class="fadeIn">Entre em contato comigo:</p>
+            <form class="slideIn" id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit" class="submitButton">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Portfólio</p>
+        </div>
+    </footer>
+
+    <script src="myport.js" defer></script>
+</body>
+
+</html>

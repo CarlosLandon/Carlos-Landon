@@ -1,0 +1,199 @@
+/* Estilos para a estrutura geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background: linear-gradient(90deg, #1DB954, #191414); /* Gradiente do verde do Spotify para o fundo escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Estilos para os links do cabeçalho */
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para as seções */
+  section {
+    padding: 50px 0;
+  }
+  
+  /* Estilos para a seção "Sobre" */
+  #sobre {
+    background: linear-gradient(90deg, #191414, #121212); /* Gradiente do fundo escuro para o fundo ainda mais escuro */
+    padding: 20px;
+  }
+  
+  /* Estilos para a seção "Portfolio" */
+  #portfolio {
+    background-color: #191414; /* Fundo escuro */
+    padding: 20px;
+  }
+  
+  /* Estilos para a seção "Contato" */
+  #contato {
+    background-color: #191414; /* Fundo escuro */
+    padding: 20px;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background: linear-gradient(90deg, #121212, #191414); /* Gradiente do fundo ainda mais escuro para o fundo escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+/* Estilos para a seção "Contato" */
+#contato {
+    background-color: #191414; /* Fundo escuro */
+    padding: 20px;
+  }
+  
+  /* Estilos para o formulário de contato */
+  #contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  /* Estilos para os rótulos do formulário */
+  #contactForm label {
+    color: #fff;
+  }
+  
+  /* Estilos para os campos de entrada do formulário */
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  /* Estilos para o acordeão */
+.interest {
+    cursor: pointer;
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.content.active {
+    display: block;
+}
+
+  /* Estilos para o botão de envio do formulário */
+  #contactForm button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #1DB954;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para o botão de envio do formulário ao passar o mouse */
+  #contactForm button:hover {
+    background-color: #1ed760;
+  }
+    
+  /* Estilos para o acordeão */
+#accordion {
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  .accordion-header:hover {
+    background-color: #444;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    background-color: #555;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .interests {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .interest {
+    width: calc(25% - 20px); /* 25% para 4 caixas por linha, com 20px de espaço entre cada caixa */
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  .musica {
+    background-color: #4CAF50; /* Verde */
+  }
+  
+  .filmes {
+    background-color: #FFC107; /* Amarelo */
+  }
+  
+  .livros {
+    background-color: #2196F3; /* Azul */
+  }
+  
+  .mangas {
+    background-color: #FF5722; /* Laranja */
+  }
+  /* Estilos para o conteúdo aberto */
+.content.active {
+    display: block;
+    max-height: 352px; /* Altura do widget do Spotify */
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* Adiciona uma animação suave */
+}
+/* Adicione estilos para a classe 'selected' */
+.interest.selected {
+    background-color: #1DB954; /* Cor do widget do Spotify */
+}
+
